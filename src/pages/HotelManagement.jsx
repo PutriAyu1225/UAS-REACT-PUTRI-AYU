@@ -37,20 +37,20 @@ const HotelManagement = () => {
         setHotels(JSON.parse(savedHotels));
       } else {
         // Jika tidak ada data di localStorage, gunakan data default
-        const initialHotels = [
-          { id: 1, nama: "Grand Hyatt Jakarta", lokasi: "Jakarta", harga: 2500000, rating: 4.8, image: "luxury" },
-          { id: 2, nama: "The Ritz-Carlton Bali", lokasi: "Bali", harga: 3200000, rating: 4.9, image: "beach" },
-          { id: 3, nama: "Hotel Majapahit Surabaya", lokasi: "Surabaya", harga: 1200000, rating: 4.5, image: "heritage" },
-          { id: 4, nama: "Trans Luxury Hotel Bandung", lokasi: "Bandung", harga: 1800000, rating: 4.6, image: "mountain" },
-          { id: 5, nama: "Ayana Resort Bali", lokasi: "Bali", harga: 4500000, rating: 4.9, image: "resort" },
-          { id: 6, nama: "Hotel Indonesia Kempinski", lokasi: "Jakarta", harga: 2800000, rating: 4.7, image: "business" },
-          { id: 7, nama: "Four Seasons Jakarta", lokasi: "Jakarta", harga: 3500000, rating: 4.9, image: "luxury" },
-          { id: 8, nama: "The Legian Bali", lokasi: "Bali", harga: 4200000, rating: 4.8, image: "beach" },
-          { id: 9, nama: "JW Marriott Surabaya", lokasi: "Surabaya", harga: 1500000, rating: 4.6, image: "business" },
-          { id: 10, nama: "Padma Resort Bandung", lokasi: "Bandung", harga: 2200000, rating: 4.7, image: "mountain" },
-          { id: 11, nama: "W Bali Seminyak", lokasi: "Bali", harga: 4800000, rating: 4.8, image: "resort" },
-          { id: 12, nama: "Mandarin Oriental Jakarta", lokasi: "Jakarta", harga: 3800000, rating: 4.9, image: "luxury" }
-        ];
+const initialHotels = [
+  { id: 1, nama: "Grand Hyatt Jakarta", lokasi: "Jakarta", harga: 2500000, rating: 4.8 },
+  { id: 2, nama: "The Ritz-Carlton Bali", lokasi: "Bali", harga: 3200000, rating: 4.9 },
+  { id: 3, nama: "Hotel Majapahit Surabaya", lokasi: "Surabaya", harga: 1200000, rating: 4.5 },
+  { id: 4, nama: "Trans Luxury Hotel Bandung", lokasi: "Bandung", harga: 1800000, rating: 4.6 },
+  { id: 5, nama: "Ayana Resort Bali", lokasi: "Bali", harga: 4500000, rating: 4.9 },
+  { id: 6, nama: "Hotel Indonesia Kempinski", lokasi: "Jakarta", harga: 2800000, rating: 4.7 },
+  { id: 7, nama: "Four Seasons Jakarta", lokasi: "Jakarta", harga: 3500000, rating: 4.9 },
+  { id: 8, nama: "The Legian Bali", lokasi: "Bali", harga: 4200000, rating: 4.8 },
+  { id: 9, nama: "JW Marriott Surabaya", lokasi: "Surabaya", harga: 1500000, rating: 4.6 },
+  { id: 10, nama: "Padma Resort Bandung", lokasi: "Bandung", harga: 2200000, rating: 4.7 },
+  { id: 11, nama: "W Bali Seminyak", lokasi: "Bali", harga: 4800000, rating: 4.8 },
+  { id: 12, nama: "Mandarin Oriental Jakarta", lokasi: "Jakarta", harga: 3800000, rating: 4.9 }
+];
         setHotels(initialHotels);
         // Simpan data default ke localStorage
         localStorage.setItem('hotels', JSON.stringify(initialHotels));
